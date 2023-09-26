@@ -1,0 +1,15 @@
+[package]
+name = "snippers_macros"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc_macro = true
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+smallvec = { version = "1.10.0", features = ["serde", "const_generics"] }
+to_snake_case = "0.1"
